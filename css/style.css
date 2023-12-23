@@ -4,3 +4,52 @@
     --gray-purple-blue: #8E8FFA;
     --light-blue: #C2D9FF;
 }
+
+.intro {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+.intro img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 15rem;
+}
+
+.intro span {
+    color: var(--purple-blue);
+}
+
+.programming-language-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming-language-carousel img, .education img {
+    width: 6rem;
+    height: 6rem;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.institutions span {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

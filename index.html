@@ -6,6 +6,9 @@
     <meta name="description" content="Developer portfolio, filled with previous projects and interests">
     <link rel="icon" href="./images/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -15,38 +18,76 @@
     <nav></nav>
     <main>
         <div class="intro">
-            <h1>My name's Luisa...<br>
-                <span>Nice to meet you!</span>
+            <h1>My name's <span>Luisa</span><br>
+                    Nice to meet you!
             </h1>
-            <img src="./images/me.jpg" height="100px" width="100px">
+            <img src="./images/me.jpg" alt="A young girl with a tan skin and glasses, smiling at the camera as she holds a white poodle">
         </div>
 
-        <div class="previous-projects">
-            <div class="wrapp">
-                <div class="wrapp-title">
-                    <h2>Previous projects</h2>
-                </div>
-                <div class="owl-carousel"> <!--Research about Owl Project!-->
-                    <img src="./images/eco.png" height="100px" width="100px">
-                    <img src="./images/dark.png" height="100px" width="100px">
-                </div>
+        <hr>
+
+        <div class="programming-language-carousel">
+            <div class="wrapper">
+                <img src="./images/python.png" alt="Python programming language logo">
+                <img src="./images/html.png" alt="HTML logo">
+                <img src="./images/css.png" alt="CSS logo">
+                <img src="./images/javascript.png" alt="JavaScript logo">
+                <img src="./images/sql.png" alt="SQL logo">
             </div>
         </div>
+
+        <hr>
+
+        <!--Overwrite carousel size-->
+
+        <!--
+        <div class="previous-projects">
+            <div class="projects-title">
+                <h2>Previous projects</h2>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/eco.png" class="d-block w-100" alt="Website project homepage. It has a green header that reads 'Ecoenergia' and a white backdrop. It has information on environmentally friendly energy sources">
+                    </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/dark.png" class="d-block w-100" alt="Website project homepage. It has a dark background with a screenshot from German Netflix show 'Dark'">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        -->
 
         <div class="education">
             <div class="institutions">
-                <img src="./images/fortec.png" height="100px" width="100px">
-                <img src="./images/unip.png" height="100px" width="100px">
+                <h2>Education</h2>
+                <div class="float-fortec">
+                    <img src="./images/fortec.png" alt="Fortec logo">
+                    <p>Before I started high school, I knew I wanted to get into a certificate program. Luckily, Fortec had incorporated certificate programs inside of their high school curriculum, as an option for many students. I graduated in IT in December 2021, at the age of 17.</p>
+                </div>
+
+                <div class="float-unip">
+                    <img src="./images/unip.png" alt="UNIP logo">
+                    <p>Afterwards, I got into <span>Universidade Paulista</span>'s (UNIP, for short) bachelor's degree in Computer Science, and my graduation is still ongoing. My intentions with this are to get a job either in Fullstack Development or Data Analysis once I'm graduated, which is expected to happen on December 2026.</p>
+                </div>
             </div>
         </div>
 
-        <!--Once languages increase in number, add another owl carousel-->
         <div class="languages">
             <div class="language-banners">
-                <img src="./images/brazil.png" height="100px" width="100px">
-                <img src="./images/usa.png" height="100px" width="100px">
-                <img src="./images/france.png" height="100px" width="100px">
-                <img src="./images/germany.png" height="100px" width="100px">
+                <h2>Language proficiency</h2>
+                <img src="./images/brazil.png" height="100px" width="100px" alt="Brazilian flag emoji, as displayed on iOS">
+                <img src="./images/usa.png" height="100px" width="100px" alt="American flag emoji, as displayed on iOS">
+                <img src="./images/france.png" height="100px" width="100px" alt="French flag emoji, as displayed on iOS">
+                <img src="./images/germany.png" height="100px" width="100px" alt="German flag emoji, as displayed on iOS">
             </div>
             <div class="language-level">
                 <h5 id="native">Native</h5>
@@ -57,7 +98,8 @@
         </div>
 
         <div class="community-activity">
-            <img src="./images/orange.jpg">
+            <h2>Community involvement</h2>
+            <img src="./images/orange.jpg" width="100px" height="100px" alt="Orange Juice logo">
         </div>
 
         <div class="contact">
