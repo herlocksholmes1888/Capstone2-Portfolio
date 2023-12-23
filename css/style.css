@@ -48,7 +48,34 @@ p {
     font-style: italic;
 }
 
+.institutions img, .community-activity img {
+    float: left;
+}
+
+.float-fortec {
+    float: left;
+}
+
+.float-unip {
+    float: right;
+}
+
+.orange {
+    float: left;
+}
+
+.languague-banners, .language_level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    clear: left;
+}
+
 footer {
+    clear: left;
     display: flex;
     justify-content: center;
     align-items: center;
