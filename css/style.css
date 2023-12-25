@@ -1,4 +1,6 @@
 :root {
+    --blue: #0d6efd;
+
     --dark-navy: #190482;
     --purple-blue: #7752FE;
     --light-purple: #AA8EFA;
@@ -6,54 +8,13 @@
     --light-blue: #C2D9FF;
 }
 
-/* Navbar */
-.container {
-    background-color: var(--gray-purple-blue);
-    position: fixed;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--gray-purple-blue);
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar-list li {
-    display: inline;
-}
-
-li a {
-    color: white;
-    padding: 1rem 2rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    opacity: 0.5;
-} 
-
-li a:hover{
-    background-color: var(--light-blue);
-    color: var(--dark-navy);
-    font-size: 1rem;
-    opacity: 1;
-}
-/* End navbar */
-
 /* Personal introduction */
 #intro-text {
-    font-family: 'PT Serif', serif;
+    font-family: 'Bree Serif', serif;
     font-style: italic;
     font-weight: bold;
     color: white;
-    background: var(--gray-purple-blue);
+    background: var(--blue);
     padding: 2.5rem;
 }
 
@@ -97,91 +58,67 @@ li a:hover{
     padding: 1.5rem;
 }
 
+.slide {
+    display: inline;
+}
+
 #programming-language img {
     width: 5rem;
     height: 5rem;
 }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 40px));
+    }
+  }
+  
+  .slider {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .slider:before,
+  .slider:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .slider:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .slider:hover .slider-slide {
+    animation-play-state: paused;
+  }
+  
+  .slider-track {
+    display: inline-block;
+    animation: 35s slide linear infinite;
+  }
+  
+  .slider-track img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
 /* End programming knowledge */
-
-/* Education */
-h2 {
-    font-family: 'PT Serif', serif;
-    font-style: bold;
-}
-
-p {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-#education {
-    background-color: var(--light-blue);
-}
-
-#education img {
-    width: 5rem;
-    height: 5rem;   
-}
-
-.institutions {
-    display: flex;
-    flex-direction: row;
-}
-
-.institutions span {
-    font-style: italic;
-}
-
-.institutions img, .community-activity img {
-    float: left;
-    margin-right: 30px;
-    border-radius: 25% 25% 25% 25%;
-}
-
-.float-fortec {
-    float: left;
-    width: 30rem;
-    height: 10rem;
-    margin-right: 30rem;
-}
-
-.float-unip {
-    float: right;
-    width: 30rem;
-    height: 10rem;
-}
-/* End education */
-
-/* Languages */
-.languages {
-    clear: left;
-}
-
-.languague-banners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* End languages */
-
-/* Community */
-.orange {
-    float: left;
-    width: 30rem;
-    height: 10rem;
-}
-/* End community */
-
-/* Contact me */
-.contact {
-    clear: left;
-}
-
-.contact i {
-    height: 1.5rem;
-    width: 1.5rem;
-    color: black;
-}
-/* End contact me */
 
 footer {
     clear: left;
