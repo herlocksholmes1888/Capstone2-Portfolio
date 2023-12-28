@@ -1,8 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    color: white; 
 }
 
-.page-padding {
-    padding: 2.5rem;
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-style: normal;
 }

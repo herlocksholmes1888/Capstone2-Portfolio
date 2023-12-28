@@ -24,26 +24,26 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" style="font-family: 'Bree Serif', serif; font-size: 20px; gap: 15px;">
               <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
-              <a class="nav-link" href="#about-me">About Me</a>
-              <a class="nav-link" href="#previous-projects">Previous Projects</a>
+              <a class="nav-link" href="#aboutMe">About Me</a>
+              <a class="nav-link" href="#previousProjects">Previous Projects</a>
               <a class="nav-link" href="#education">Education</a>
               <a class="nav-link" href="#languages">Languages</a>
               <a class="nav-link" href="#community">Community</a>
-              <a class="nav-link" href="#contact-me">Contact Me</a>
+              <a class="nav-link" href="#contactMe">Contact Me</a>
             </div>
           </div>
         </div>
     </nav>
     <br><br>
 
-    <div id="intro-text">
+    <div id="introText">
         <h1>My name's <span>Luisa</span><br>
             Nice to meet you
         </h1>
     </div>
 
     <main>
-        <div id="programming-language">
+        <div id="programmingLanguage">
             <div class="slider">
                 <div class="slider-track">
                     <div class="slide"><img src="./images/python.png" alt="Python programming language logo"></div>
@@ -71,18 +71,110 @@
             </div>
         </div>
 
-        <div id="introduction">
+        <div id="aboutMe">
             <div class="introduction-contents">
                 <div class="introduction-image">
                     <img src="./images/me.jpg" alt="A young girl with a tan skin and glasses, smiling at the camera as she holds a white poodle">
                     <div class="introduction-text">
-                        <p>Hello and welcome to my online portfolio! My name is Luisa Lopes. I'm currently 20 years old, residing in Brazil. I'm a second year in Computer Science, and am currently focusing my studies on Fullstack Web Development and Data Analysis.</p>
+                        <h2>About Me</h2>
+                        <p>Hello and welcome to my online portfolio! My name is Luisa Frugoli Lopes. I'm currently 20 years old, residing in Brazil. I'm a second year in Computer Science, and am currently focusing my studies on Fullstack Web Development and Data Analysis.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="contact">
+        <div id="previousProjects">
+            <h2>Previous Projects</h2>
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <a href="https://herlocksholmes1888.github.io/APS-Ecoenergia/" target="_blank"><img src="./images/eco.png" alt="The cover of the 'Ecoenergia' website, about environmentally friendly energy sources. It has a green and white color palette. It is coded in Portuguese."></a>
+                                    </div>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <a href="https://herlocksholmes1888.github.io/dark-netflix/" target="_blank"><img src="./images/dark.png" alt="The cover of a website about 'Dark', the German Netflix show. It features Middle Aged and Young Jonas, two characters of said show, sat in a bench. It is coded in German."></a>
+                                    </div>                          
+                                </figure>
+                            </li>
+                        </ul>    
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="./images/eco.png" alt="The cover of the 'Ecoenergia' website, about environmentally friendly energy sources. It has a green and white color palette. It is coded in Portuguese."></label>
+                            </li>
+                            <li>
+                                <label for="slide-2"><img src="./images/dark.png" alt="The cover of a website about 'Dark', the German Netflix show. It features Middle Aged and Young Jonas, two characters of said show, sat in a bench. It is coded in German."></label>
+                            </li>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="education">
+            <div class="institutions">
+                <div class="fortec">
+                    <img src="./images/fortec.png">
+                    <ul>
+                        <li><strong>Degree:</strong> Certificate Program in IT</li>
+                        <li><strong>Year of admission:</strong> 2019</li>
+                        <li><strong>Status:</strong> Finished</li>
+                    </ul>
+                    <p>
+                        As I got through my high school program, I enlisted on an IT related certificate program. That means that, as I was done with high school, I already had an additional degree and fundamental knowledge on topics such as Fullstack Development, Database, and Electronics. 
+                    </p>
+                </div>
+
+                <div class="unip">
+                    <img src="./images/unip.png">
+                    <ul>
+                        <li><strong>Degree:</strong> Bachelor's Degree in Computer Science</li>
+                        <li><strong>Year of admission:</strong> 2023</li>
+                        <li><strong>Status:</strong> Ongoing</li>
+                    </ul>
+                    <p>
+                        After the pandemic, I decided to continue on with my journey in the tech world and started a major in Computer Science at UNIP. I am yet to know what awaits me on this part of my journey, but I've already developed some software with my colleagues and feel a constant improve in my soft skills due to that.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="languages">
+            <div class="flags">
+                <img src="./images/brazil.png" alt="">
+                <img src="./images/usa.png" alt="">
+                <img src="./images/france.png" alt="">
+                <img src="./images/germany.png" alt="">
+            </div>
+
+            <div class="level">
+                <h4>Native</h4>
+                <h4>Fluent</h4>
+                <h4>Advanced</h4>
+                <h4>Intermediate</h4>
+            </div>
+        </div>
+
+        <div id="community">
+            <div class="community-contents">
+                <div class="community-img">
+                    <img src="./images/orange.jpg" alt="">
+                </div>
+
+                <div class="community-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla scelerisque turpis id ullamcorper. Vivamus tincidunt odio ligula, eget dapibus ex semper vitae. Vivamus consequat purus id neque molestie luctus. Suspendisse mollis ligula vestibulum nibh dapibus lobortis. Vestibulum facilisis in massa non gravida. In at aliquam dolor. Ut et ex eros. Vivamus arcu sapien, varius nec tincidunt eu, finibus eu urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactMe">
             <h2>Contact</h2>
             <div class="social-media"> 
                 <a href="https://github.com/herlocksholmes1888" target="_blank"><i class="fa-brands fa-github"></i></a>
