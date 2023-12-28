@@ -100,13 +100,6 @@
     padding-left: 3.5rem;
 }
 
-.introduction-text p {
-    font-family: 'Roboto Condensed', monospace;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
-
 .introduction-image img {
     width: 10em;
     height: 10em;

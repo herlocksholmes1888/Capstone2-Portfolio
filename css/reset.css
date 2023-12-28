@@ -18,3 +18,14 @@ footer {
     font-size: 20px;
     font-style: normal;
 }
+
+p {
+    font-family: 'Roboto Condensed', monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+figure:hover {
+    opacity: 0.8;
+}
