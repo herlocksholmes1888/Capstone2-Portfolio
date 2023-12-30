@@ -1,4 +1,5 @@
 @media (max-width: 576px) {
+    /* About Me */
     #aboutMe {
         height: 23rem;
     }
@@ -16,9 +17,20 @@
         padding-left: 0;
         font-size: 24px;
     }
+
+    /* End About Me */
+
+    /* Previous Projects */
+    .carousel__slide img {
+          object-fit: contain; 
+          width: 100%; 
+          height: auto; 
+    }
+    /* End Previous Projects */
 }
 
 @media (min-width: 500px) and (max-width: 767.98px) {
+    /* About Me */
     #aboutMe {
         height: 18rem;
     }
@@ -34,9 +46,19 @@
     .introduction-text h2 {
         padding-left: 0;
     }
+    /* End About Me */
+
+    /* Previous Projects */
+        .carousel__slide img {
+            object-fit: contain; 
+            width: 100%; 
+            height: auto; 
+      }
+      /* End Previous Projects */
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* About Me */
     #aboutMe {
         height: 14.5rem;
     }
@@ -52,6 +74,15 @@
     .introduction-text h2 {
         padding-left: 0;
     }
+    /* End About Me */
+
+    /* Previous Projects */
+    .carousel__slide img {
+            object-fit: contain; 
+            width: 100%; 
+            height: auto; 
+      }
+    /* End Previous Projects */
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
