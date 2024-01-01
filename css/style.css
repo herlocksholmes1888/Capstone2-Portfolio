@@ -20,7 +20,7 @@
 /* End Intro */
 
 /* Programming knowledge */
-#programmingLanguage {
+#skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
     display: inline;
 }
 
-#programmingLanguage img {
+#skills img {
     width: 5rem;
     height: 5rem;
 }
@@ -94,6 +94,7 @@
     width: auto;
     height: 15vw;
     background-color: var(--dark-navy);
+    color: white;
 }
 
 .introduction-contents {
@@ -134,6 +135,7 @@
 #previousProjects {
     padding: 50px 0;
     background-color: var(--in-between-blue);
+    color: white;
 }
 
 #previousProjects h2 {
@@ -163,8 +165,8 @@
         
         &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -100%; }
         &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
-        &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px white; }
-        &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px white; }
+        &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px; }
+        &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px; }
     }
 }
 
@@ -187,7 +189,6 @@
     height: 100%;
     overflow: hidden;
     transition: all 300ms ease-out;
-    vertical-align: top;
     box-sizing: border-box;
     white-space: normal;
     
@@ -209,7 +210,6 @@
     
     .credit {
         margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
         display: block;        
     }
     
@@ -245,11 +245,6 @@
         &:hover,
         &:focus {
             cursor: pointer;
-            
-            img {
-                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
-                transition: all 300ms ease-in-out;
-            }
         }
     }
     
@@ -260,29 +255,129 @@
         object-fit: cover;
     }
 }
+
+.carousel__slides {
+    padding-bottom: 20px; 
+}
+
+.carousel__thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc((100% / 3) - 20px);
+    margin-bottom: 10px; 
+    transition: all 300ms ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel__thumbnails label {
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__thumbnails img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.carousel__thumbnails label:hover img,
+.carousel__thumbnails label:focus img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 /* End previous projects */
 
 /* Education */
 #education {
-  background-color: black;
+    background-color: white;
+    color: black;
 }
-/* End education */
 
-/* Contact */
-#contactMe {
-    background-color: black;
+.institutions {
+    max-width: 800px;
+    margin: 0 auto;
 }
-/* End contact */
+
+.fortec {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    padding-right: 5%;
+}
+
+.unip {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    padding-left: 5%;
+}
+
+.institutions img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.institutions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.institutions ul li {
+    margin-bottom: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 12pt;
+    font-style: normal;
+}
+
+.institutions p {
+    text-align: justify;
+}
+
+/* End education */
 
 /* Languages */
 #languages {
-    background-color: black;
+    background-color: var(--dark-navy);
+    color: white;
+    clear: both;
+    padding: 2em;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        max-width: 200px; 
+        margin: 10px; 
+    }
+}
+
+.flags img:hover {
+    cursor: pointer;
 }
 /* End languages */
 
 /* Community */
 #community {
-    background-color: black;
+    background-color: var(--in-between-blue);
+    color: white;
 }
 /* End community */
 
@@ -293,12 +388,17 @@
     align-items: center;
     padding: 0.5em;
     font-size: 30px;
+    color: white;
 }
 
 .social-media {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5em;
+}
+
+.icon {
+    color: white;
 }
 
 .icon:hover {
@@ -310,4 +410,5 @@
     justify-content: center;
     align-items: center;
     opacity: 0.8;
+    color: white;
 }

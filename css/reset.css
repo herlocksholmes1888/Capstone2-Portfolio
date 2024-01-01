@@ -1,11 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 h2 {
     font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Helvetica', sans-serif;
     font-weight: bold;
 }
 
@@ -19,8 +23,8 @@ footer {
 }
 
 p {
-    font-family: 'Roboto Condensed', monospace;
-    font-size: 18px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14pt;
     font-style: normal;
     font-weight: 400;
 }
