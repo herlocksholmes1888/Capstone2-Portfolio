@@ -1,8 +1,19 @@
 :root {
     --dark-navy: #190482;
+    --darker-navy: #0c0338;
     --in-between-blue: #4059E3;
     --blue: #0d6efd;
 }
+
+/* General */
+.emphasis {
+    color: var(--dark-navy);
+}
+
+.emphasis.text {
+    font-weight: bold;
+}
+/* End general */
 
 /* Intro */
 #introText {
@@ -12,10 +23,6 @@
     color: white;
     background: var(--blue);
     padding: 2.5rem;
-}
-
-#introText span {
-    color: var(--dark-navy);
 }
 /* End Intro */
 
@@ -380,6 +387,30 @@
 #community {
     background-color: var(--in-between-blue);
     color: white;
+    padding: 3%;
+}
+
+.community-text {
+    padding-left: 5%;
+}
+
+.community-text a:link {
+    color: var(--saturated-blue);
+}
+
+.community-text a:visited {
+    color: var(--darker-navy);
+}
+
+.community-img {
+    float: left;
+}
+
+.community-img img {
+    width: 10em;
+    height: 10em;
+    padding-right: 10%;
+    border-radius: 50%;
 }
 /* End community */
 
