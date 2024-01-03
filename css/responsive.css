@@ -1,4 +1,4 @@
-@media (min-width: 100px) {
+@media screen and (min-width: 100px) {
     .carousel__slide img {
         object-fit: contain; 
         width: 100%; 
@@ -12,10 +12,10 @@
     }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     /* About Me */
     #aboutMe {
-        height: 23rem;
+        height: 20rem;
     }
 
     .introduction-contents {
@@ -31,14 +31,43 @@
         padding-left: 0;
         font-size: 24px;
     }
-
     /* End About Me */
+
+    /* Skills */
+    .slider:before,
+    .slider:after {
+        background: none;
+    }
+    /* End kills */
+
+    /* Education */
+    .institutions {
+        width: auto;
+        display: block;
+    }
+
+    .fortec,
+    .unip {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .institutions-img img {
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* End education */
 }
 
 @media (min-width: 500px) and (max-width: 767.98px) {
     /* About Me */
     #aboutMe {
-        height: 18rem;
+        height: 17rem;
     }
 
     .introduction-contents {
@@ -53,6 +82,13 @@
         padding-left: 0;
     }
     /* End About Me */
+
+    /* Skills */
+    .slider:before,
+    .slider:after {
+        background: none;
+    }
+    /* End kills */
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

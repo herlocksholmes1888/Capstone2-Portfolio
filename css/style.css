@@ -311,6 +311,7 @@
 .institutions {
     max-width: 800px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .fortec {
@@ -336,6 +337,7 @@
 .institutions ul {
     list-style: none;
     padding: 0;
+    margin-top: 5%;
 }
 
 .institutions ul li {
@@ -349,6 +351,10 @@
     text-align: justify;
 }
 
+.institutions img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 /* End education */
 
 /* Languages */
@@ -367,10 +373,6 @@
         max-width: 200px; 
         margin: 10px; 
     }
-}
-
-.flags img:hover {
-    cursor: pointer;
 }
 /* End languages */
 
