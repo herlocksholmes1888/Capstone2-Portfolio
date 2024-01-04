@@ -40,6 +40,12 @@
     }
     /* End kills */
 
+    /* Previous projects */
+    #previousProjects h2 {
+        padding-left: 1em;
+    }
+    /* End previous projects */
+
     /* Education */
     .institutions {
         width: auto;
@@ -99,6 +105,12 @@
     }
     /* End kills */
 
+    /* Previous projects */
+    #previousProjects h2 {
+        padding-left: 1em;
+    }
+    /* End previous projects */
+
     /* Languages */ 
     .flags img {
         width: 100px;
@@ -125,6 +137,12 @@
         padding-left: 0;
     }
     /* End About Me */
+
+    /* Previous projects */
+    #previousProjects h2 {
+            padding-left: 1em;
+    }
+    /* End previous projects */
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

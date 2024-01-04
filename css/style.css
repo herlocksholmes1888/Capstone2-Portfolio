@@ -315,6 +315,11 @@
     color: black;
 }
 
+#education h2 {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
 .institutions {
     max-width: 800px;
     margin: 0 auto;
@@ -390,12 +395,8 @@
     padding: 3%;
 }
 
-.community-text {
-    padding-left: 5%;
-}
-
-.community-text a:link {
-    color: var(--saturated-blue);
+#community h2 {
+    padding-bottom: 1.5rem;
 }
 
 .community-text a:visited {
