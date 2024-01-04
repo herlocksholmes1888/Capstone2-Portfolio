@@ -64,6 +64,13 @@
         align-items: center;
     }
     /* End education */
+
+    /* Languages */ 
+    .flags img {
+        width: 80px;
+        height: 80px;
+    }
+    /* End languages */
 }
 
 @media (min-width: 500px) and (max-width: 767.98px) {
@@ -91,6 +98,13 @@
         background: none;
     }
     /* End kills */
+
+    /* Languages */ 
+    .flags img {
+        width: 100px;
+        height: 100px;
+    }
+    /* End languages */
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
