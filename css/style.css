@@ -3,6 +3,7 @@
     --darker-navy: #0c0338;
     --in-between-blue: #4059E3;
     --blue: #0d6efd;
+    --light-gray: #C8C8C8;
 }
 
 /* General */
@@ -118,27 +119,6 @@
 /* End personal introduction */
 
 /* Previous projects */
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-    
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-    
-  > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-  }
-}
-
 #previousProjects {
     padding: 50px 0;
     background-color: var(--in-between-blue);
@@ -205,7 +185,6 @@
     }
     
     div {
-        @include aspect-ratio(3, 2);
         width: 100%;
     }
     
@@ -246,7 +225,6 @@
     
     label {
         display: block;
-        @include aspect-ratio(1,1);
         
                   
         &:hover,
@@ -401,7 +379,7 @@
 }
 
 .community-text a:link {
-    color: white;
+    color: var(--light-gray);
 }
 
 .community-text a:visited {

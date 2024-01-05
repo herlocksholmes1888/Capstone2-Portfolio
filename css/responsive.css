@@ -15,7 +15,7 @@
 @media screen and (max-width: 576px) {
     /* About Me */
     #aboutMe {
-        height: 20rem;
+        height: 24rem;
     }
 
     .introduction-contents {
@@ -37,6 +37,10 @@
     .slider:before,
     .slider:after {
         background: none;
+    }
+
+    .slider:hover .slider-track {
+        animation-play-state: running;
     }
     /* End kills */
 
@@ -73,8 +77,8 @@
 
     /* Languages */ 
     .flags img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     /* End languages */
 }
@@ -103,6 +107,10 @@
     .slider:after {
         background: none;
     }
+
+    .slider:hover .slider-track {
+        animation-play-state: running;
+    }
     /* End kills */
 
     /* Previous projects */
@@ -113,8 +121,8 @@
 
     /* Languages */ 
     .flags img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     /* End languages */
 }
@@ -143,6 +151,13 @@
             padding-left: 1em;
     }
     /* End previous projects */
+
+    /* Languages */
+    .flags img {
+        width: 100px;
+        height: 100px;
+    }
+    /* Languages */
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
