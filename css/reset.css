@@ -22,6 +22,15 @@ footer {
     font-style: normal;
 }
 
+footer {
+    display: block;
+    width: auto;
+}
+
+footer hr {
+    color: white;
+}
+
 p {
     font-family: 'Helvetica', sans-serif;
     font-size: 14pt;
@@ -31,9 +40,4 @@ p {
 
 figure:hover {
     opacity: 0.8;
-}
-
-footer {
-    display: block;
-    width: auto;
 }

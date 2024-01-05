@@ -7,7 +7,7 @@
 
 /* General */
 .emphasis {
-    color: var(--dark-navy);
+    color: var(--darker-navy);
 }
 
 .emphasis.text {
@@ -380,6 +380,7 @@
 .flags {
     display: flex;
     justify-content: space-evenly;
+    gap: 2em;
 
     img {
         max-width: 200px; 
@@ -397,6 +398,10 @@
 
 #community h2 {
     padding-bottom: 1.5rem;
+}
+
+.community-text a:link {
+    color: white;
 }
 
 .community-text a:visited {
@@ -445,4 +450,5 @@
     align-items: center;
     opacity: 0.8;
     color: white;
+    padding-bottom: 0.8em;
 }
